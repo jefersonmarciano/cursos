@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Course Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .support-container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .support-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .support-card h2 {
+            color: #823200;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #f5f5f5;
+            padding-bottom: 10px;
+        }
+        
+        .support-card p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-method {
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 30px;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-method i {
+            font-size: 3rem;
+            color: #823200;
+            margin-bottom: 15px;
+        }
+        
+        .contact-method h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .contact-method p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .contact-method a {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #823200;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-size: 1.1rem;
+        }
+        
+        .contact-method a:hover {
+            background-color: #a04000;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box i {
+            color: #856404;
+            margin-right: 10px;
+        }
+        
+        .warning-box p {
+            color: #856404;
+            margin: 0;
+        }
+        
+        .support-banner {
+            width: 100%;
+            height: 200px;
+            background-color: #ff7700;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .support-banner-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        
+        .support-banner-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .support-banner-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            color: white;
+        }
+        
+        .support-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner.jpg-frsf8DrE28fXzp8zPsJ9xnpJukURzE.jpeg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: 1;
+        }
+        
+        .email-highlight {
+            font-weight: bold;
+            color: #823200;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="./assets/logo.png" alt="logo" class="logo">
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><i class="fas fa-book"></i> My Courses</li>
+                    <li><i class="fas fa-user-tie"></i> Producer Area</li>
+                    <li><i class="fas fa-comment-alt"></i> Testimonials</li>
+                    <li><i class="fas fa-users"></i> Affiliates</li>
+                    <li><i class="fas fa-box"></i> Packages</li>
+                    <li><i class="fas fa-globe"></i> Domains</li>
+                    <li class="active"><i class="fas fa-headset"></i> Support</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="toggle-sidebar" id="toggleSidebar">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="index.html" class="back-to-courses">
+                        <i class="fas fa-arrow-left"></i> Back to courses
+                    </a>
+                    <h1>Customer Support</h1>
+                </div>
+            </header>
+
+            <!-- Support Content -->
+            <div class="support-container">
+                <div class="support-banner">
+                    <div class="support-banner-content">
+                        <h1>Need Help?</h1>
+                        <p>We're here to help with modules or refund requests</p>
+                    </div>
+                </div>
+
+                <div class="support-card">
+                    <h2>Need Help with the Modules or Want to Request a Refund?</h2>
+                    
+                    <p>We're here to support you!</p>
+                    
+                    <p>If you have any questions about the modules, need technical assistance, or would like to request a refund quickly and easily, please contact our support team directly.</p>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Contact Us by Email</h3>
+                        <p>Our team is ready to help and make sure your experience is smooth and positive.</p>
+                        <p class="email-highlight">📩 Email us at: copyxsuport@proton.me</p>
+                        <a href="mailto:copyxsuport@proton.me">Send Email</a>
+                    </div>
+                    
+                    <div class="warning-box">
+                        <p><i class="fas fa-exclamation-triangle"></i> <strong>Warning:</strong> Please avoid requesting a refund directly through Digistore, as their process can take significantly longer. By contacting us via email, we can assist you much faster and more efficiently.</p>
+                    </div>
+                    
+                    <p>Our team is ready to help and make sure your experience is smooth and positive.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle sidebar on mobile
+            const toggleSidebar = document.getElementById('toggleSidebar');
+            const sidebar = document.querySelector('.sidebar');
+            
+            if (toggleSidebar) {
+                toggleSidebar.addEventListener('click', function() {
+                    sidebar.classList.toggle('active');
+                });
+            }
+
+            // Close sidebar when clicking outside on mobile
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth <= 768 && 
+                    !sidebar.contains(event.target) && 
+                    !toggleSidebar.contains(event.target) && 
+                    sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    sidebar.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
