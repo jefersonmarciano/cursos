@@ -6,6 +6,132 @@
     <title>Course Platform</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Withdrawal Button Styles */
+        .withdrawal-button-container {
+            display: flex;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #823200;
+        }
+        
+        .withdrawal-button {
+            background-color: #ff7700;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+        }
+        
+        .withdrawal-button:hover {
+            background-color: #ff8800;
+            transform: translateY(-2px);
+        }
+        
+        .withdrawal-button i {
+            margin-right: 10px;
+        }
+        
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .balance-modal {
+            background: linear-gradient(135deg, #1e2a3a 0%, #0f172a 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 30px;
+            width: 90%;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transform: translateY(20px);
+            transition: transform 0.3s;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .modal-overlay.active .balance-modal {
+            transform: translateY(0);
+        }
+        
+        .balance-modal h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .balance-amount {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 30px 0;
+            color: white;
+        }
+        
+        .balance-info {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .know-more-btn {
+            background-color: #eab308;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .know-more-btn:hover {
+            background-color: #facc15;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .close-modal:hover {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -43,6 +169,13 @@
                 <div class="banner-content">
                     <img src="./assets/banner.jpg" alt="Pix My Dollar" class="banner-img">
                 </div>
+            </div>
+
+            <!-- Withdrawal Button -->
+            <div class="withdrawal-button-container">
+                <button class="withdrawal-button" id="withdrawalButton">
+                    <i class="fas fa-wallet"></i> Withdrawal your Balance
+                </button>
             </div>
 
             <!-- Courses Section -->
@@ -105,14 +238,13 @@
                             
                         </div>
                     </a>
+
                     <!-- Course 6 -->
-                    <a href="/support.html" class="course-card-link">
+                    <a href="./support.html" class="course-card-link">
                         <div class="course-card">
                             <div class="course-image">
-                                <img src="./assets/suporte.jpg" alt="Affiliation">
-                                
+                                <img src="./assets/suporte.jpg" alt="Support">
                             </div>
-                            
                         </div>
                     </a>
                 </div>
@@ -120,6 +252,58 @@
         </main>
     </div>
 
+    <!-- Balance Modal -->
+    <div class="modal-overlay" id="balanceModal">
+        <div class="balance-modal">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Your Balance</h2>
+            <div class="balance-amount">$399.99</div>
+            <p class="balance-info">
+                You need to wait 60 days to withdraw because you must complete all modules first. Once you finish, you will receive the amount and your diploma.
+            </p>
+            <button class="know-more-btn">Click to know more</button>
+        </div>
+    </div>
+
     <script src="index.js"></script>
+    <script>
+        // Balance Modal Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const withdrawalButton = document.getElementById('withdrawalButton');
+            const balanceModal = document.getElementById('balanceModal');
+            const closeModal = document.getElementById('closeModal');
+            
+            // Open modal when withdrawal button is clicked
+            withdrawalButton.addEventListener('click', function() {
+                balanceModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            });
+            
+            // Close modal when close button is clicked
+            closeModal.addEventListener('click', function() {
+                balanceModal.classList.remove('active');
+                document.body.style.overflow = ''; // Re-enable scrolling
+            });
+            
+            // Close modal when clicking outside the modal content
+            balanceModal.addEventListener('click', function(e) {
+                if (e.target === balanceModal) {
+                    balanceModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Close modal when ESC key is pressed
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && balanceModal.classList.contains('active')) {
+                    balanceModal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
