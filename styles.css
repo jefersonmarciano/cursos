@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #8d4718;
+    background-color: #823200;
     color: white;
 }
 
@@ -20,7 +20,7 @@ body {
 /* Sidebar Styles */
 .sidebar {
     width: 240px;
-    background-color: #8d4718;
+    background-color: #2e1a0c;
     color: rgb(255, 255, 255);
     transition: all 0.3s ease;
     position: fixed;
@@ -78,7 +78,7 @@ body {
 }
 
 .main-header {
-    background-color: #c05c1a;
+    background-color: #823200;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -103,7 +103,7 @@ body {
 .back-to-courses {
     display: flex;
     align-items: center;
-    color: #0056b3;
+    color: white;
     text-decoration: none;
     margin-right: 20px;
     font-weight: 500;
@@ -128,7 +128,7 @@ body {
 /* Banner Styles */
 .banner {
     padding: 20px;
-    background-color: #555454;
+    background-color: #823200;
 }
 
 .banner-content {
@@ -250,7 +250,7 @@ body {
 
 .lessons-section h2 {
     margin-bottom: 15px;
-    color: #0056b3;
+    color: white;
 }
 
 .video-container {
@@ -325,7 +325,7 @@ body {
 }
 
 .lessons-container {
-    background-color: #fff;
+    background-color: #2E1A0C;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -368,7 +368,7 @@ body {
 }
 
 .lesson-item.active {
-    background-color: #e3f2fd;
+    background-color: #A3A380;
 }
 
 .lesson-status {

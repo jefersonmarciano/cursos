@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aulas do Curso</title>
+    <title>Course Lessons</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -16,12 +16,12 @@
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li class="active"><i class="fas fa-book"></i> Meus cursos</li>
-                    <li><i class="fas fa-user-tie"></i> Área do Produtor</li>
-                    <li><i class="fas fa-comment-alt"></i> Depoimentos</li>
-                    <li><i class="fas fa-users"></i> Afiliados</li>
-                    <li><i class="fas fa-box"></i> Pacotes</li>
-                    <li><i class="fas fa-globe"></i> Domínios</li>
+                    <li class="active"><i class="fas fa-book"></i> My Courses</li>
+                    <li><i class="fas fa-user-tie"></i> Producer Area</li>
+                    <li><i class="fas fa-comment-alt"></i> Testimonials</li>
+                    <li><i class="fas fa-users"></i> Affiliates</li>
+                    <li><i class="fas fa-box"></i> Packages</li>
+                    <li><i class="fas fa-globe"></i> Domains</li>
                 </ul>
             </nav>
         </aside>
@@ -34,9 +34,9 @@
                         <i class="fas fa-bars"></i>
                     </button>
                     <a href="index.html" class="back-to-courses">
-                        <i class="fas fa-arrow-left"></i> Voltar para cursos
+                        <i class="fas fa-arrow-left"></i> Back to courses
                     </a>
-                    <h1 id="courseTitle">Carregando curso...</h1>
+                    <h1 id="courseTitle">Loading course...</h1>
                 </div>
                 
             </header>
@@ -50,19 +50,19 @@
                             <div class="video-player">
                                 <video id="videoPlayer" controls>
                                     <source src="/placeholder.svg" type="video/mp4">
-                                    Seu navegador não suporta o elemento de vídeo.
+                                    Your browser does not support the video element.
                                 </video>
                                 <div class="video-placeholder" id="videoPlaceholder">
                                     <i class="fas fa-play-circle"></i>
-                                    <p>Clique em uma aula para começar</p>
+                                    <p>Click on a lesson to start</p>
                                 </div>
                             </div>
                             <div class="video-info">
-                                <h3 id="videoTitle">Selecione uma aula</h3>
+                                <h3 id="videoTitle">Select a lesson</h3>
                                 <div class="video-actions">
                                     <button class="btn-like"><i class="fas fa-thumbs-up"></i></button>
                                     <button class="btn-dislike"><i class="fas fa-thumbs-down"></i></button>
-                                    <button class="btn-complete">Marcar como concluído</button>
+                                    <button class="btn-complete">Mark as completed</button>
                                 </div>
                             </div>
                         </div>
@@ -70,11 +70,11 @@
 
                     <!-- Lessons List Section -->
                     <div class="lessons-section">
-                        <h2>Aulas do Curso</h2>
+                        <h2>Course Lessons</h2>
                         <div class="lessons-container">
                             <div class="lessons-list" id="lessonsList">
                                 <!-- Lessons will be populated by JavaScript -->
-                                <div class="loading-lessons">Carregando aulas...</div>
+                                <div class="loading-lessons">Loading lessons...</div>
                             </div>
                         </div>
                     </div>
@@ -85,14 +85,14 @@
                     <a href="#" class="nav-button prev-course" id="prevCourse">
                         <i class="fas fa-arrow-left"></i>
                         <div class="nav-content">
-                            <span>Anterior</span>
-                            <strong id="prevCourseName">Curso anterior</strong>
+                            <span>Previous</span>
+                            <strong id="prevCourseName">Previous course</strong>
                         </div>
                     </a>
                     <a href="#" class="nav-button next-course" id="nextCourse">
                         <div class="nav-content">
-                            <span>Próximo</span>
-                            <strong id="nextCourseName">Próximo curso</strong>
+                            <span>Next</span>
+                            <strong id="nextCourseName">Next course</strong>
                         </div>
                         <i class="fas fa-arrow-right"></i>
                     </a>

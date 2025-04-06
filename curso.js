@@ -2,83 +2,283 @@ document.addEventListener('DOMContentLoaded', function() {
     // Course data
     const courses = {
         modulo1: {
-            title: "Curso 1",
+            title: "Money Mentality",
             lessons: [
-                { id: 1, title: "Aula 01 - Introdução", duration: "1m", videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
-                { id: 2, title: "Aula 02 - Como usar a plataforma", duration: "3m", videoUrl: "https://vimeo.com/148751763" },
-                { id: 3, title: "Aula 03 - Primeiros passos", duration: "5m", videoUrl: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" },
-                { 
-                    id: 4, 
-                    title: "Aula 04 - Configurando sua conta", 
-                    duration: "4m", 
-                    videoUrl: `html:<div id="vid_67d8b222b5e657217ff91877" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
-                    <img id="thumb_67d8b222b5e657217ff91877" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67d8b222b5e657217ff91877/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
-                    <div id="backdrop_67d8b222b5e657217ff91877" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                { id: 1, title: "Money Mindset Introduction", duration: "1m", videoUrl: `html:<div id="vid_67f2b6d3902b8a612190404c" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b6d3902b8a612190404c" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b6d3902b8a612190404c/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b6d3902b8a612190404c" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
                     </div> 
-                    <script type="text/javascript" id="scr_67d8b222b5e657217ff91877"> 
+                    <script type="text/javascript" id="scr_67f2b6d3902b8a612190404c"> 
                     var s=document.createElement("script"); 
-                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67d8b222b5e657217ff91877/player.js"; 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b6d3902b8a612190404c/player.js"; 
                     s.async=!0; 
                     document.head.appendChild(s); 
                     </script>`
-
-                },
-                { id: 5, title: "Aula 05 - Dicas importantes", duration: "6m", videoUrl: "https://player.vimeo.com/video/76979871" },
-                { id: 6, title: "Aula 06 - Perguntas frequentes", duration: "3m", videoUrl: "#" },
-                { id: 7, title: "Aula 07 - Suporte e ajuda", duration: "2m", videoUrl: "#" },
-                { id: 8, title: "Aula 08 - Conclusão do módulo", duration: "1m", videoUrl: "#" }
+                     },
+                { id: 2, title: "Unlock Your Money Prosperity Mindset", duration: "3m", videoUrl: `html:<div id="vid_67f2b6cdd75d2074cce2d224" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b6cdd75d2074cce2d224" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b6cdd75d2074cce2d224/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b6cdd75d2074cce2d224" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b6cdd75d2074cce2d224"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b6cdd75d2074cce2d224/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                     },
+                
+                
             ]
         },
         modulo2: {
-            title: "Curso 2",
+            title: "TEMU AFFILIATE REWARDS",
             lessons: [
-                { id: 1, title: "Aula 01 - Introdução", duration: "1m", videoUrl: "#" },
-                { id: 2, title: "Aula 02 - Como ter uma Mentalidade de Sucesso", duration: "5m", videoUrl: "#" },
-                { id: 3, title: "Aula 03 - Superando obstáculos", duration: "4m", videoUrl: "#" },
-                { id: 4, title: "Aula 04 - Definindo metas", duration: "3m", videoUrl: "#" },
-                { id: 5, title: "Aula 05 - Hábitos de sucesso", duration: "7m", videoUrl: "#" },
-                { id: 6, title: "Aula 06 - Gerenciando o tempo", duration: "4m", videoUrl: "#" },
-                { id: 7, title: "Aula 07 - Persistência e disciplina", duration: "5m", videoUrl: "#" },
-                { id: 8, title: "Aula 08 - Conclusão do módulo", duration: "2m", videoUrl: "#" }
+                { id: 1, title: "Introduction", duration: "1m", videoUrl: `html:<div id="vid_67f2e19e06dd518b2f46751d" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2e19e06dd518b2f46751d" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e19e06dd518b2f46751d/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2e19e06dd518b2f46751d" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2e19e06dd518b2f46751d"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e19e06dd518b2f46751d/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`                    
+                     },
+                { id: 2, title: "How I Made $3,989 My FIRST Month", duration: "5m", videoUrl: `html:<div id="vid_67f2e2d1541a9a7be5a30115" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2e2d1541a9a7be5a30115" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e2d1541a9a7be5a30115/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2e2d1541a9a7be5a30115" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2e2d1541a9a7be5a30115"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e2d1541a9a7be5a30115/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                    
+                     },
+                { id: 3, title: "Lesson 1 – Proof of Earnings & Why Temu Pays You", duration: "4m", videoUrl: `html:<div id="vid_67f2e17b06dd518b2f4674f4" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2e17b06dd518b2f4674f4" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e17b06dd518b2f4674f4/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2e17b06dd518b2f4674f4" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2e17b06dd518b2f4674f4"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e17b06dd518b2f4674f4/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                    
+                     },
+                { id: 4, title: "Lesson 2 – How the Temu Affiliate Program Works", duration: "3m", videoUrl: `html:<div id="vid_67f2e17b06dd518b2f4674f4" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2e17b06dd518b2f4674f4" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e17b06dd518b2f4674f4/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2e17b06dd518b2f4674f4" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2e17b06dd518b2f4674f4"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e17b06dd518b2f4674f4/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                    
+                     },
+                { id: 5, title: "Lesson 3 – TikTok Strategy Go Viral", duration: "7m", videoUrl: `html:<div id="vid_67f2e18b69e879f5a2451646" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2e18b69e879f5a2451646" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e18b69e879f5a2451646/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2e18b69e879f5a2451646" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2e18b69e879f5a2451646"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e18b69e879f5a2451646/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`                    
+                     },
+                { id: 6, title: "Lesson 4 – TikTok Strategy part 2", duration: "4m", videoUrl: `html:<div id="vid_67f2e1a55f4ceec86cc5b022" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2e1a55f4ceec86cc5b022" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e1a55f4ceec86cc5b022/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2e1a55f4ceec86cc5b022" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2e1a55f4ceec86cc5b022"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e1a55f4ceec86cc5b022/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                    
+                     },
+                     { id: 7, title: "Lesson 5 – YouTube Shorts + Facebook Groups = Fast", duration: "4m", videoUrl: `html:<div id="vid_67f2e1b887bbe40eb12623e9" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                        <img id="thumb_67f2e1b887bbe40eb12623e9" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e1b887bbe40eb12623e9/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                        <div id="backdrop_67f2e1b887bbe40eb12623e9" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                        </div> 
+                        <script type="text/javascript" id="scr_67f2e1b887bbe40eb12623e9"> 
+                        var s=document.createElement("script"); 
+                        s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e1b887bbe40eb12623e9/player.js"; 
+                        s.async=!0; 
+                        document.head.appendChild(s); 
+                        </script>`
+                        
+                        
+                         },
+                    
+                
             ]
         },
         modulo3: {
-            title: "Curso 3",
+            title: "PLAY GAMES EARN MONEY",
             lessons: [
-                { id: 1, title: "Aula 01 - Introdução", duration: "1m", videoUrl: "#" },
-                { id: 2, title: "Aula 02 - Principais sites de avaliação", duration: "6m", videoUrl: "#" },
-                { id: 3, title: "Aula 03 - Como ganhar com sites de avaliação", duration: "8m", videoUrl: "#" },
-                { id: 4, title: "Aula 04 - Estratégias eficientes", duration: "5m", videoUrl: "#" },
-                { id: 5, title: "Aula 05 - Maximizando seus ganhos", duration: "4m", videoUrl: "#" },
-                { id: 6, title: "Aula 06 - Evitando armadilhas", duration: "3m", videoUrl: "#" },
-                { id: 7, title: "Aula 07 - Dicas avançadas", duration: "5m", videoUrl: "#" },
-                { id: 8, title: "Aula 08 - Conclusão do módulo", duration: "2m", videoUrl: "#" }
+                { id: 1, title: "Introduction", duration: "2m", videoUrl: `html:<div id="vid_67f2b77d5f4ceec86cc58d91" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b77d5f4ceec86cc58d91" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b77d5f4ceec86cc58d91/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b77d5f4ceec86cc58d91" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b77d5f4ceec86cc58d91"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b77d5f4ceec86cc58d91/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                     },
+                { id: 2, title: "Understanding the platform with real people", duration: "8m", videoUrl: `html:<div id="vid_67f2b749541a9a7be5a2da9c" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b749541a9a7be5a2da9c" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b749541a9a7be5a2da9c/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b749541a9a7be5a2da9c" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b749541a9a7be5a2da9c"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b749541a9a7be5a2da9c/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                    },
+                { id: 3, title: "How Freecash Works to Make Money Online (Quick Guide)", duration: "1m", videoUrl: `html:<div id="vid_67f2b734d75d2074cce2d2a1" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b734d75d2074cce2d2a1" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b734d75d2074cce2d2a1/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b734d75d2074cce2d2a1" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b734d75d2074cce2d2a1"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b734d75d2074cce2d2a1/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                     },
+                { id: 4, title: "How to Cash Out Freecash App (QUICK GUIDE)", duration: "2m", videoUrl: `html:<div id="vid_67f2b73887bbe40eb125ff90" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b73887bbe40eb125ff90" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b73887bbe40eb125ff90/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b73887bbe40eb125ff90" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b73887bbe40eb125ff90"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b73887bbe40eb125ff90/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                     },
+                { id: 5, title: "How to Change Your Freecash Profile", duration: "4m", videoUrl: `html:<div id="vid_67f2b74e541a9a7be5a2dac0" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b74e541a9a7be5a2dac0" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b74e541a9a7be5a2dac0/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b74e541a9a7be5a2dac0" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b74e541a9a7be5a2dac0"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b74e541a9a7be5a2dac0/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                     },
+                { id: 6, title: "How to MAKE MONEY on Freecash App", duration: "3m", videoUrl: `html:<div id="vid_67f2b75269e879f5a244f298" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b75269e879f5a244f298" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b75269e879f5a244f298/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b75269e879f5a244f298" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b75269e879f5a244f298"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b75269e879f5a244f298/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                     },
+                { id: 7, title: "How to Earn on FREECASH APP", duration: "2m", videoUrl: `html:<div id="vid_67f2b756902b8a61219040b6" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b756902b8a61219040b6" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b756902b8a61219040b6/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b756902b8a61219040b6" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b756902b8a61219040b6"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b756902b8a61219040b6/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                     },
+                
             ]
         },
         modulo4: {
-            title: "Curso 4",
+            title: "Get Paid For Surveys",
             lessons: [
-                { id: 1, title: "Aula 01 - Introdução ao Cashback", duration: "2m", videoUrl: "#" },
-                { id: 2, title: "Aula 02 - Como funciona o Cashback", duration: "4m", videoUrl: "#" },
-                { id: 3, title: "Aula 03 - Melhores plataformas", duration: "5m", videoUrl: "#" },
-                { id: 4, title: "Aula 04 - Toluna", duration: "6m", videoUrl: "#" },
-                { id: 5, title: "Aula 05 - Ysense", duration: "6m", videoUrl: "#" },
-                { id: 6, title: "Aula 06 - LifePoints", duration: "5m", videoUrl: "#" },
-                { id: 7, title: "Aula 07 - Meseems", duration: "3m", videoUrl: "#" },
-                { id: 8, title: "Aula 08 - Swagbucks", duration: "4m", videoUrl: "#" }
+                { id: 1, title: "Introduction", duration: "2m", videoUrl: `html:<div id="vid_67f2b72f69e879f5a244f274" style="position: relative; width: 100%; padding: 56.25% 0 0;">
+                    <img id="thumb_67f2b72f69e879f5a244f274" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b72f69e879f5a244f274/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail">
+                    <div id="backdrop_67f2b72f69e879f5a244f274" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div>
+                    </div>
+                    <script type="text/javascript" id="scr_67f2b72f69e879f5a244f274">
+                    var s=document.createElement("script");
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b72f69e879f5a244f274/player.js";
+                    s.async=!0;
+                    document.head.appendChild(s);
+                    </script>`
+                     },
+                { id: 2, title: "Lesson 1 - Toluna - Intro and creating account", duration: "4m", videoUrl: `html:<div id="vid_67f2b6f6902b8a6121904066" style="position: relative; width: 100%; padding: 56.25% 0 0;">
+                    <img id="thumb_67f2b6f6902b8a6121904066" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b6f6902b8a6121904066/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail">
+                    <div id="backdrop_67f2b6f6902b8a6121904066" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div>
+                    </div>
+                    <script type="text/javascript" id="scr_67f2b6f6902b8a6121904066">
+                    var s=document.createElement("script");
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b6f6902b8a6121904066/player.js";
+                    s.async=!0;
+                    document.head.appendChild(s);
+                    </script>`
+                     },
+                { id: 3, title: "Lesson 2 - Understanding the site", duration: "5m", videoUrl: `html:<div id="vid_67f2b709d75d2074cce2d24d" style="position: relative; width: 100%; padding: 56.25% 0 0;">
+                    <img id="thumb_67f2b709d75d2074cce2d24d" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b709d75d2074cce2d24d/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail">
+                    <div id="backdrop_67f2b709d75d2074cce2d24d" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div>
+                    </div>
+                    <script type="text/javascript" id="scr_67f2b709d75d2074cce2d24d">
+                    var s=document.createElement("script");
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b709d75d2074cce2d24d/player.js";
+                    s.async=!0;
+                    document.head.appendChild(s);
+                    </script>`
+                     },
+                { id: 4, title: "Lesson 3 - How to answer surveys and earn money", duration: "6m", videoUrl: `html:<div id="vid_67f2b71cbdab914c19ac2746" style="position: relative; width: 100%; padding: 56.25% 0 0;">
+                    <img id="thumb_67f2b71cbdab914c19ac2746" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b71cbdab914c19ac2746/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail">
+                    <div id="backdrop_67f2b71cbdab914c19ac2746" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div>
+                    </div>
+                    <script type="text/javascript" id="scr_67f2b71cbdab914c19ac2746">
+                    var s=document.createElement("script");
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b71cbdab914c19ac2746/player.js";
+                    s.async=!0;
+                    document.head.appendChild(s);
+                    </script>`
+                     },
+                { id: 5, title: "Lesson 4 - Withdrawal and final", duration: "6m", videoUrl: `html:<div id="vid_67f2b729541a9a7be5a2da82" style="position: relative; width: 100%; padding: 56.25% 0 0;">
+                    <img id="thumb_67f2b729541a9a7be5a2da82" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b729541a9a7be5a2da82/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail">
+                    <div id="backdrop_67f2b729541a9a7be5a2da82" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div>
+                    </div>
+                    <script type="text/javascript" id="scr_67f2b729541a9a7be5a2da82">
+                    var s=document.createElement("script");
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b729541a9a7be5a2da82/player.js";
+                    s.async=!0;
+                    document.head.appendChild(s);
+                    </script>`
+                    },
+               
             ]
         },
         modulo5: {
-            title: "Curso 5",
+            title: "Temu especial bonus",
             lessons: [
-                { id: 1, title: "Aula 01 - O que é afiliação", duration: "3m", videoUrl: "#" },
-                { id: 2, title: "Aula 02 - Como se tornar um afiliado", duration: "5m", videoUrl: "#" },
-                { id: 3, title: "Aula 03 - Escolhendo produtos", duration: "4m", videoUrl: "#" },
-                { id: 4, title: "Aula 04 - Estratégias de promoção", duration: "6m", videoUrl: "#" },
-                { id: 5, title: "Aula 05 - Redes sociais", duration: "5m", videoUrl: "#" },
-                { id: 6, title: "Aula 06 - Email marketing", duration: "4m", videoUrl: "#" },
-                { id: 7, title: "Aula 07 - Otimizando conversões", duration: "7m", videoUrl: "#" },
-                { id: 8, title: "Aula 08 - Escalando seus resultados", duration: "5m", videoUrl: "#" }
+                { id: 1, title: "How to Get 3 Free Items Temu", duration: "2m", videoUrl: `html:<div id="vid_67f2e5ccd75d2074cce2f94c" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2e5ccd75d2074cce2f94c" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e5ccd75d2074cce2f94c/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2e5ccd75d2074cce2f94c" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2e5ccd75d2074cce2f94c"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e5ccd75d2074cce2f94c/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                    },
+                
             ]
         }
     };
