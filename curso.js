@@ -33,16 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         modulo2: {
             title: "TEMU AFFILIATE REWARDS",
             lessons: [
-                { id: 1, title: "Introduction", duration: "1m", videoUrl: `html:<div id="vid_67f2e19e06dd518b2f46751d" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
-                    <img id="thumb_67f2e19e06dd518b2f46751d" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e19e06dd518b2f46751d/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
-                    <div id="backdrop_67f2e19e06dd518b2f46751d" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
-                    </div> 
-                    <script type="text/javascript" id="scr_67f2e19e06dd518b2f46751d"> 
-                    var s=document.createElement("script"); 
-                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e19e06dd518b2f46751d/player.js"; 
-                    s.async=!0; 
-                    document.head.appendChild(s); 
-                    </script>`                    
+                { id: 1, title: "Introduction - Temu Affiliate", duration: "1m", videoUrl: `html:<div id="vid_67f2f5bf902b8a61219074d3" style="position: relative; width: 100%; padding: 56.25% 0 0;"> <img id="thumb_67f2f5bf902b8a61219074d3" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2f5bf902b8a61219074d3/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> <div id="backdrop_67f2f5bf902b8a61219074d3" style=" -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%; "></div> </div> <script type="text/javascript" id="scr_67f2f5bf902b8a61219074d3"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2f5bf902b8a61219074d3/player.js", s.async=!0,document.head.appendChild(s); </script>`                    
                      },
                 { id: 2, title: "How I Made $3,989 My FIRST Month", duration: "5m", videoUrl: `html:<div id="vid_67f2e2d1541a9a7be5a30115" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
                     <img id="thumb_67f2e2d1541a9a7be5a30115" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e2d1541a9a7be5a30115/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
@@ -56,16 +47,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     </script>`
                     
                      },
-                { id: 3, title: "Lesson 1 – Proof of Earnings & Why Temu Pays You", duration: "4m", videoUrl: `html:<div id="vid_67f2e17b06dd518b2f4674f4" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
-                    <img id="thumb_67f2e17b06dd518b2f4674f4" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e17b06dd518b2f4674f4/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
-                    <div id="backdrop_67f2e17b06dd518b2f4674f4" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                { id: 3, title: "Lesson 1 – Proof of Earnings & Why Temu Pays You", duration: "4m", videoUrl: `html:<div id="vid_67f2e174902b8a61219063aa" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2e174902b8a61219063aa" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e174902b8a61219063aa/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2e174902b8a61219063aa" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
                     </div> 
-                    <script type="text/javascript" id="scr_67f2e17b06dd518b2f4674f4"> 
+                    <script type="text/javascript" id="scr_67f2e174902b8a61219063aa"> 
                     var s=document.createElement("script"); 
-                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e17b06dd518b2f4674f4/player.js"; 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2e174902b8a61219063aa/player.js"; 
                     s.async=!0; 
                     document.head.appendChild(s); 
                     </script>`
+
                     
                      },
                 { id: 4, title: "Lesson 2 – How the Temu Affiliate Program Works", duration: "3m", videoUrl: `html:<div id="vid_67f2e17b06dd518b2f4674f4" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
@@ -200,6 +192,54 @@ document.addEventListener('DOMContentLoaded', function() {
                     document.head.appendChild(s); 
                     </script>`
                      },
+                     { id: 8, title: "How to Get Freecash Report", duration: "2m", videoUrl: `html:<div id="vid_67f2b75e06dd518b2f465178" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                        <img id="thumb_67f2b75e06dd518b2f465178" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b75e06dd518b2f465178/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                        <div id="backdrop_67f2b75e06dd518b2f465178" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                        </div> 
+                        <script type="text/javascript" id="scr_67f2b75e06dd518b2f465178"> 
+                        var s=document.createElement("script"); 
+                        s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b75e06dd518b2f465178/player.js"; 
+                        s.async=!0; 
+                        document.head.appendChild(s); 
+                        </script>`
+
+                         },
+                         { id: 9, title: "How to Use FREECASH for Roblox", duration: "2m", videoUrl: `html:<div id="vid_67f2b75a06dd518b2f465164" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                            <img id="thumb_67f2b75a06dd518b2f465164" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b75a06dd518b2f465164/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                            <div id="backdrop_67f2b75a06dd518b2f465164" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                            </div> 
+                            <script type="text/javascript" id="scr_67f2b75a06dd518b2f465164"> 
+                            var s=document.createElement("script"); 
+                            s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b75a06dd518b2f465164/player.js"; 
+                            s.async=!0; 
+                            document.head.appendChild(s); 
+                            </script>`
+    
+    
+                             },
+                { id: 10, title: "How to Withdraw from Freecash To Paypal", duration: "2m", videoUrl: `html:<div id="vid_67f2b762541a9a7be5a2dae4" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b762541a9a7be5a2dae4" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b762541a9a7be5a2dae4/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b762541a9a7be5a2dae4" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b762541a9a7be5a2dae4"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b762541a9a7be5a2dae4/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+                },
+                { id: 11, title: "How to REDEEM Your Paypal Gift Card Freecash App", duration: "2m", videoUrl: `html:<div id="vid_67f2b76869e879f5a244f2b6" style="position: relative; width: 100%; padding: 56.25% 0 0;"> 
+                    <img id="thumb_67f2b76869e879f5a244f2b6" src="https://images.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b76869e879f5a244f2b6/thumbnail.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" alt="thumbnail"> 
+                    <div id="backdrop_67f2b76869e879f5a244f2b6" style="-webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); position: absolute; top: 0; height: 100%; width: 100%;"></div> 
+                    </div> 
+                    <script type="text/javascript" id="scr_67f2b76869e879f5a244f2b6"> 
+                    var s=document.createElement("script"); 
+                    s.src="https://scripts.converteai.net/0a8b4b97-a0e3-4633-ac8a-9914c0209ef6/players/67f2b76869e879f5a244f2b6/player.js"; 
+                    s.async=!0; 
+                    document.head.appendChild(s); 
+                    </script>`
+
+                },
                 
             ]
         },
