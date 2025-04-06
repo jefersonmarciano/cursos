@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #555454;
+    background-color: #fc883b;
     color: #333;
 }
 
@@ -20,8 +20,8 @@ body {
 /* Sidebar Styles */
 .sidebar {
     width: 240px;
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #FF6700;
+    color: black;
     transition: all 0.3s ease;
     position: fixed;
     height: 100vh;
@@ -78,7 +78,7 @@ body {
 }
 
 .main-header {
-    background-color: #fff;
+    background-color: #fc883b;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
